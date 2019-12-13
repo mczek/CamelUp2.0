@@ -6,9 +6,11 @@
 using namespace Rcpp;
 
 
+RcppExport SEXP _rcpp_module_boot_die_cpp();
 RcppExport SEXP _rcpp_module_boot_double_cpp();
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_rcpp_module_boot_die_cpp", (DL_FUNC) &_rcpp_module_boot_die_cpp, 0},
     {"_rcpp_module_boot_double_cpp", (DL_FUNC) &_rcpp_module_boot_double_cpp, 0},
     {NULL, NULL, 0}
 };
