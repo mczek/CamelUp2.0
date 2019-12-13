@@ -12,18 +12,3 @@
 #' @export
 NULL
 
-#' @name Double$new
-#' @title Constructs a new Double object
-#' @param v A value to encapsulate
-NULL
-
-#' Multiplies two doubles
-#'
-#' @param v1 First value
-#' @param v2 Second value
-#' @return Product of v1 and v2
-#' @export
-mult <- function(v1, v2) {
-    .Call(`_CamelUp2_0_mult`, v1, v2)
-}
-
