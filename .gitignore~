@@ -3,3 +3,4 @@
 .Rbuildignore
 .Rhistory
 src/.DS_Store
+*.o

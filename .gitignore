@@ -2,5 +2,5 @@
 *.Rproj
 .Rbuildignore
 .Rhistory
-src/.DS_Store
+*.DS_Store
 *.o
