@@ -17,11 +17,11 @@
 //' @export
 class Board {
 private:
-  std::list <int> spaces;
+  std::list <Space> spaces;
 public:
   Board(int nSpaces){
     for(int i = 0; i < nSpaces; i++){
-      spaces.push_back(i);
+      spaces.push_back(Space(i));
     }
   }
 
