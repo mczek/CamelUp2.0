@@ -3,3 +3,4 @@ NULL
 
 Rcpp::loadModule("double_cpp", TRUE)
 Rcpp::loadModule("die_cpp", TRUE)
+Rcpp::loadModule("camel_cpp", TRUE)

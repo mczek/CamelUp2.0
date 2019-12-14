@@ -16,12 +16,24 @@
 class Die {
 private:
   std::string color;
+  int value;
 public:
   Die(std::string c){
     color = c;
+    value = 0;
   }
+
   std::string getColor() {
     return color;
+  }
+
+  int getValue(){
+    return value;
+  }
+
+  int roll(){
+    value = rand() % 3 + 1;
+    return value;
   }
 };
 
@@ -35,5 +47,7 @@ RCPP_EXPOSED_CLASS(Die)
     class_<Die>("Die")
       .constructor<std::string>()
       .method("getColor", &Die::getColor)
+      .method("getValue", &Die::getValue)
+      .method("roll", &Die::roll)
     ;
   }
