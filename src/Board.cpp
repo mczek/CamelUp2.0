@@ -1,6 +1,7 @@
 #include <Rcpp.h>
 #include <list>
 #include "Space.h"
+#include "Die.h"
 
 
 
@@ -18,6 +19,7 @@
 class Board {
 private:
   std::list <Space> spaces;
+  std::list <Die> dice;
 public:
   Board(int nSpaces){
     for(int i = 0; i < nSpaces; i++){
@@ -27,6 +29,10 @@ public:
 
   int getNSpaces() {
     return spaces.size();
+  }
+
+  int getNDiceRemaining() {
+    return 5;
   }
 };
 
@@ -40,6 +46,7 @@ RCPP_EXPOSED_CLASS(Board)
     class_<Board>("Board")
       .constructor<int>()
       .method("getNSpaces", &Board::getNSpaces)
+      .method("getNDiceRemaining", &Board::getNDiceRemaining)
 
     ;
   }
