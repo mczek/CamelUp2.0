@@ -2,6 +2,9 @@
 #include <list>
 #include "Space.h"
 #include "Die.h"
+#include <vector>
+#include <algorithm>
+
 
 
 
@@ -19,12 +22,13 @@
 class Board {
 private:
   std::list <Space> spaces;
-  std::list <Die> dice;
+  std::vector <Die> dice;
 public:
   Board(int nSpaces){
     for(int i = 0; i < nSpaces; i++){
       spaces.push_back(Space(i));
     }
+    resetDice();
   }
 
   int getNSpaces() {
@@ -32,7 +36,23 @@ public:
   }
 
   int getNDiceRemaining() {
-    return 5;
+    return dice.size();
+  }
+
+  void resetDice(){
+    dice = std::vector <Die>();
+    dice.push_back(Die("Green"));
+    dice.push_back(Die("Blue"));
+    dice.push_back(Die("White"));
+    dice.push_back(Die("Yellow"));
+    dice.push_back(Die("Orange"));
+    std::random_shuffle(dice.begin(), dice.end());
+  }
+
+  Die selectDie(){
+    Die selectedDie = dice.back();
+    dice.pop_back();
+    return selectedDie;
   }
 };
 
