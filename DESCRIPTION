@@ -18,3 +18,8 @@ Imports:
     Rcpp
 Suggests: 
     testthat (>= 2.1.0)
+RcppModules:
+    die_cpp,
+    camel_cpp,
+    space_cpp,
+    board_cpp

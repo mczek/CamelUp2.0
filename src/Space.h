@@ -9,6 +9,8 @@ private:
   std::stack <Camel> camels;
   int nCamels;
 public:
+  Space();
+
   Space(int pos);
 
   int getPosition();
@@ -17,4 +19,3 @@ public:
 
   int getNCamels();
 };
-

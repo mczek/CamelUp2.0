@@ -21,6 +21,8 @@ private:
   std::stack <Camel> camels;
   int nCamels;
 public:
+  Space(){}
+
   Space(int pos){
     position = pos;
     nCamels = 0;
@@ -44,7 +46,7 @@ public:
 
 
 // Approach 4: Module docstrings
-
+//
 RCPP_EXPOSED_CLASS(Space)
   RCPP_MODULE(space_cpp) {
     using namespace Rcpp;
