@@ -4,8 +4,7 @@
 
 class Board {
 private:
-  std::vector<Space> spaces;
+  int nSpaces;
 public:
-  Board(int nSpaces);
+  Board(int n);
 };
-

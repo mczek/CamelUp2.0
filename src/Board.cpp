@@ -20,18 +20,11 @@ private:
 public:
   Board(int n){
     nSpaces = n;
-    addSpaces();
-  }
-
-  void addSpaces(){
-    for(int i = 0;i<nSpaces;i++){
-      spaces.push_back(Space(i));
-    }
   }
 };
 
 RCPP_MODULE(board_cpp){
   class_<Board>("Board")
-    .constructor<int>()
+  .constructor<int>()
   ;
 }

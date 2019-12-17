@@ -25,7 +25,7 @@ NULL
 
 #' @name Die
 #' @title Encapsulates a double
-#' @description Type the name of the class to see its methods
+#' @description Type the name of the class to see its
 #' @field new Constructor
 #' @field mult Multiply by another Double object \itemize{
 #' \item Paramter: other - The other Double object
@@ -33,29 +33,8 @@ NULL
 #' }
 #' @export
 NULL
-
-#' Multiplies two doubles
-#'
-#' @param v1 First value
-#' @param v2 Second value
-#' @return Product of v1 and v2
-#' @export
-RandomNum <- function(N) {
-    .Call(`_CamelUp2_0_RandomNum`, N)
-}
 
 #' @name Space
-#' @title Encapsulates a double
-#' @description Type the name of the class to see its methods
-#' @field new Constructor
-#' @field mult Multiply by another Double object \itemize{
-#' \item Paramter: other - The other Double object
-#' \item Returns: product of the values
-#' }
-#' @export
-NULL
-
-#' @name Double
 #' @title Encapsulates a double
 #' @description Type the name of the class to see its methods
 #' @field new Constructor

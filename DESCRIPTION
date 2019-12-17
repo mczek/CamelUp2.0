@@ -1,25 +1,22 @@
 Package: CamelUp2.0
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: CamelUp Board Game as a Teaching Aid for Introductory Statistics
+Version: 0.1.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Michael",
+           family = "Czekanski",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "mczekanski@middlebury.edu")
+Description: Implements the board game CamelUp for use in introductory statistics classes using a Shiny app. 
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 LinkingTo: 
     Rcpp
-Imports: 
+Imports:
+    methods, 
     Rcpp
 Suggests: 
     testthat (>= 2.1.0)
 RcppModules:
-    die_cpp,
-    camel_cpp,
-    space_cpp,
-    board_cpp
+    die_cpp

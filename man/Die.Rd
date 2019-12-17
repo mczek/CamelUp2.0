@@ -4,7 +4,7 @@
 \alias{Die}
 \title{Encapsulates a double}
 \description{
-Type the name of the class to see its methods
+Type the name of the class to see its
 }
 \section{Fields}{
 

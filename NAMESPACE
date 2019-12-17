@@ -3,8 +3,6 @@
 export(Board)
 export(Camel)
 export(Die)
-export(Double)
-export(RandomNum)
 export(Space)
 import(Rcpp)
 useDynLib(CamelUp2.0)
